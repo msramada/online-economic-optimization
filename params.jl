@@ -1,0 +1,23 @@
+β = 1e-3
+Δt = 1
+T = 24
+Nₜ = Int(T ÷ Δt)
+Δx = 0.05
+L = 0.2
+Nₓ = Int(L ÷ Δx) # Has to be 4 at least
+Tᵢₘᵢₙ = 69
+Tᵢₘₐₓ = 77
+Tᵢᵒ = 70 # initial condition
+Twᵒ = 50 * ones(Nₓ)
+Tₐ = -20 * ones(Nₜ) #+ 20*randn(Nₜ)
+κ = 1.16e-4
+Cᵢ = 8325
+
+S = 3500
+A = 1000
+V = 10000
+αꜝ = 4.64e-3
+αꜝꜝ = 1.16e-2
+C_elec_onPeak = 0.12 # 9am to 10pm (first 13 hours, we start from 9am)
+C_elec_offPeak = 0.04 # the rest
+C_gas = 0.10
