@@ -5,11 +5,11 @@ Nₜ = Int(T ÷ Δt)
 Δx = 0.05
 L = 0.2
 Nₓ = Int(L ÷ Δx) # Has to be 4 at least
-Tᵢₘᵢₙ = 69
-Tᵢₘₐₓ = 77
-Tᵢᵒ = 70 # initial condition
-Twᵒ = 50 * ones(Nₓ)
-Tₐ = -20 * ones(Nₜ) #+ 20*randn(Nₜ)
+Tᵢₘᵢₙ = (69 − 32) * 5/9
+Tᵢₘₐₓ = (77 - 32) * 5/9
+Tᵢᵒ = (70 - 32) * 5/9 # initial condition
+Twᵒ = (50 * ones(Nₓ) .- 32) .* 5/9
+Tₐ = (60 * ones(Nₜ) .- 32) .* 5/9 #+ 20*randn(Nₜ)
 κ = 1.16e-4
 Cᵢ = 8325
 
