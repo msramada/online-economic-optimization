@@ -1,10 +1,8 @@
 β = 1e-3
 Δt = 1
 T = 24
-
 Δx = 0.05
 L = 0.2
-Nₜ = Int(T ÷ Δt); Nₓ = Int(L ÷ Δx) # Nₓ has to be 4 at least
 Tᵢₘᵢₙ = (69 − 32) * 5/9
 Tᵢₘₐₓ = (77 - 32) * 5/9
 Tᵢᵒ = (70 - 32) * 5/9 # initial condition
